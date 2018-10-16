@@ -1,0 +1,207 @@
+.table-header {
+  margin-bottom: 10px;
+  background: #fff;
+}
+.I18n-form {
+  margin: 0 15px;
+}
+.I18n-form .u-form-item {
+  min-height: 60px;
+}
+.I18n-form .yyuapRef.refInputWrap {
+  width: 200px ;
+  display: inline-block;
+}
+.I18n-form .yyuapRef.refInputWrap .u-form-item {
+  margin: 0;
+}
+.I18n-form .yyuapRef.refInputWrap .u-form-item input {
+  width: auto;
+  min-width: 200px ;
+  padding: 0 12px;
+}
+.I18n-form .u-col-md-4.u-col-xs-6 > div .input-number input {
+  min-width: 158px;
+}
+.I18n-form .u-form-control {
+  width: auto;
+  min-width: 200px;
+}
+.I18n-form .u-col-md-4.u-col-xs-6 > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+.I18n-form .u-input-number.u-input-group.simple .u-input-group-btn {
+  position: absolute;
+}
+.I18n-root {
+  /* 隐藏列表下拉框样式 */
+}
+.I18n-root > .table-header {
+  padding-top: 10px;
+  padding-left: 15px;
+  background: #fff;
+}
+.I18n-root .table-list .u-table .u-table-tbody .td-detail {
+  color: #1E7BE2;
+  cursor: pointer;
+}
+.I18n-root .table-list .u-table .u-table-tbody .operation-btn .u-button {
+  background: none;
+  color: #1E7BE2;
+}
+.I18n-root .hideselect.u-select .u-select-selection {
+  border: none;
+  background: none;
+  color: #666;
+  content: none;
+  cursor: default;
+}
+.I18n-root .hideselect.u-select .u-select-selection:hover {
+  cursor: default;
+}
+.I18n-root .hideselect.u-select .u-select-arrow:before {
+  content: none;
+}
+.mt25 {
+  margin-top: 25px;
+}
+.ml5 {
+  margin-left: 5px;
+}
+.I18n-detail .u-label {
+  display: inline-block;
+  min-width: 110px;
+  text-align: left;
+  vertical-align: top;
+}
+.I18n-detail .detail-body {
+  color: #4A4A4A;
+  background: #fff;
+  padding: 20px 15px;
+  padding-bottom: 20px;
+}
+.I18n-detail .detail-body > div {
+  height: 60px;
+  line-height: 30px;
+  padding-bottom: 45px;
+}
+.I18n-detail .detail-body .u-form-control {
+  width: auto;
+  min-width: 240px;
+}
+.I18n-detail .detail-body .form-item {
+  display: inline-block;
+}
+.I18n-detail .detail-body .datepicker {
+  vertical-align: top;
+}
+.I18n-detail .detail-body .u-select {
+  width: auto;
+  min-width: 240px;
+  display: inline-block;
+}
+.I18n-detail .detail-body .error {
+  color: red;
+  display: inline-block;
+}
+.I18n-detail .detail-body .yyuapRef .error {
+  margin-left: -92px;
+  display: none;
+}
+.I18n-detail .detail-body .refInputWrap {
+  width: 240px;
+  display: inline-block;
+}
+.I18n-detail .detail-body .refInputWrap input {
+  width: auto;
+  min-width: 240px;
+  position: relative;
+  display: inline-block;
+  padding: 0 12px;
+  height: 30px;
+  cursor: text;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #424242;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #bdbdbd;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+.I18n-detail .detail-body .refInputWrap input.formDisable {
+  background: #eee;
+  border-color: #e0e0e0;
+  color: #bdbdbd;
+  cursor: not-allowed;
+}
+.I18n-detail .detail-body .refInputWrap i {
+  right: 2%;
+  top: 0;
+}
+.I18n-detail .detail-body .u-col-md-4.u-col-xs-6 > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+.I18n-detail .detail-body .u-col-md-4.u-col-xs-6 > div .input-number input {
+  min-width: 198px;
+}
+.I18n-detail .detail-body .input-number-int .u-input-group-btn {
+  display: inline-block;
+  vertical-align: top;
+}
+.I18n-detail .detail-body .u-input-number.u-input-group.simple .u-input-group-btn {
+  position: absolute;
+}
+.I18n-detail .detail-body .datepicker-input-group.u-input-group .u-input-group-btn {
+  line-height: 28px;
+}
+.I18n-detail .head-btn {
+  display: inline-block;
+  float: right;
+}
+.I18n-detail .head-btn .head-save {
+  background: #1E7BE2;
+  color: #fff;
+  margin-left: 15px;
+}
+.I18n-detail .master-tag {
+  padding: 10px 0;
+  background: #fff;
+  width: auto;
+  box-sizing: border-box;
+  position: relative;
+}
+.I18n-detail .master-tag .childhead {
+  -webkit-justify-content: center;
+  width: 100%;
+  height: 40px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.I18n-detail .master-tag .childhead .workbreakdown {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  color: #039BE5;
+  border-bottom: 3px solid #039BE5;
+  font-size: 14px;
+  padding: 0 24px 0 24px;
+}
+.I18n-detail .master-tag .childhead .annexinfo {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 24px 0 24px;
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=app.css.map*/

@@ -1,0 +1,213 @@
+.table-header {
+  margin-bottom: 10px;
+  background: #fff;
+}
+.translate-form {
+  margin: 0 15px;
+}
+.translate-form .u-form-item {
+  min-height: 60px;
+}
+.translate-form .yyuapRef.refInputWrap {
+  width: 200px ;
+  display: inline-block;
+}
+.translate-form .yyuapRef.refInputWrap .u-form-item {
+  margin: 0;
+}
+.translate-form .yyuapRef.refInputWrap .u-form-item input {
+  width: auto;
+  min-width: 200px ;
+  padding: 0 12px;
+}
+.translate-form .u-col-md-4.u-col-xs-6 > div .input-number input {
+  min-width: 158px;
+}
+.translate-form .u-form-control {
+  width: auto;
+  min-width: 200px;
+}
+.translate-form .u-col-md-4.u-col-xs-6 > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+.translate-form .u-input-number.u-input-group.simple .u-input-group-btn {
+  position: absolute;
+}
+.translate-root {
+  /* 隐藏列表下拉框样式 */
+}
+.translate-root > .table-header {
+  padding-top: 10px;
+  padding-left: 15px;
+  background: #fff;
+}
+.translate-root .table-list .u-table .u-table-tbody .td-detail {
+  color: #1E7BE2;
+  cursor: pointer;
+}
+.translate-root .table-list .u-table .u-table-tbody .operation-btn .u-button {
+  background: none;
+  color: #1E7BE2;
+}
+.translate-root .hideselect.u-select .u-select-selection {
+  border: none;
+  background: none;
+  color: #666;
+  content: none;
+  cursor: default;
+}
+.translate-root .hideselect.u-select .u-select-selection:hover {
+  cursor: default;
+}
+.translate-root .hideselect.u-select .u-select-arrow:before {
+  content: none;
+}
+.mt25 {
+  margin-top: 25px;
+}
+.ml5 {
+  margin-left: 5px;
+}
+.AcExport {
+  display: inline-block;
+}
+.AcExport .ml5 {
+  margin-left: 5px;
+}
+.translate-detail .u-label {
+  display: inline-block;
+  min-width: 110px;
+  text-align: left;
+  vertical-align: top;
+}
+.translate-detail .detail-body {
+  color: #4A4A4A;
+  background: #fff;
+  padding: 20px 15px;
+  padding-bottom: 20px;
+}
+.translate-detail .detail-body > div {
+  height: 60px;
+  line-height: 30px;
+  padding-bottom: 45px;
+}
+.translate-detail .detail-body .u-form-control {
+  width: auto;
+  min-width: 240px;
+}
+.translate-detail .detail-body .form-item {
+  display: inline-block;
+}
+.translate-detail .detail-body .datepicker {
+  vertical-align: top;
+}
+.translate-detail .detail-body .u-select {
+  width: auto;
+  min-width: 240px;
+  display: inline-block;
+}
+.translate-detail .detail-body .error {
+  color: red;
+  display: inline-block;
+}
+.translate-detail .detail-body .yyuapRef .error {
+  margin-left: -92px;
+  display: none;
+}
+.translate-detail .detail-body .refInputWrap {
+  width: 240px;
+  display: inline-block;
+}
+.translate-detail .detail-body .refInputWrap input {
+  width: auto;
+  min-width: 240px;
+  position: relative;
+  display: inline-block;
+  padding: 0 12px;
+  height: 30px;
+  cursor: text;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #424242;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #bdbdbd;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+.translate-detail .detail-body .refInputWrap input.formDisable {
+  background: #eee;
+  border-color: #e0e0e0;
+  color: #bdbdbd;
+  cursor: not-allowed;
+}
+.translate-detail .detail-body .refInputWrap i {
+  right: 2%;
+  top: 0;
+}
+.translate-detail .detail-body .u-col-md-4.u-col-xs-6 > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+.translate-detail .detail-body .u-col-md-4.u-col-xs-6 > div .input-number input {
+  min-width: 198px;
+}
+.translate-detail .detail-body .input-number-int .u-input-group-btn {
+  display: inline-block;
+  vertical-align: top;
+}
+.translate-detail .detail-body .u-input-number.u-input-group.simple .u-input-group-btn {
+  position: absolute;
+}
+.translate-detail .detail-body .datepicker-input-group.u-input-group .u-input-group-btn {
+  line-height: 28px;
+}
+.translate-detail .head-btn {
+  display: inline-block;
+  float: right;
+}
+.translate-detail .head-btn .head-save {
+  background: #1E7BE2;
+  color: #fff;
+  margin-left: 15px;
+}
+.translate-detail .master-tag {
+  padding: 10px 0;
+  background: #fff;
+  width: auto;
+  box-sizing: border-box;
+  position: relative;
+}
+.translate-detail .master-tag .childhead {
+  -webkit-justify-content: center;
+  width: 100%;
+  height: 40px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.translate-detail .master-tag .childhead .workbreakdown {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  color: #039BE5;
+  border-bottom: 3px solid #039BE5;
+  font-size: 14px;
+  padding: 0 24px 0 24px;
+}
+.translate-detail .master-tag .childhead .annexinfo {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 24px 0 24px;
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=app.css.map*/
