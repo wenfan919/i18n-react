@@ -73,6 +73,8 @@ export default {
                         
                         res.content[i].name = temp.name+"";
 
+                        res.content[i].projectType = temp.projectType+"";
+
                         res.content[i].sourcepath = temp.attachment == null || temp.attachment.length == 0 ? "" : temp.attachment[0].originalFileName + "";
                     
                         res.content[i].filepath = temp.attachId == null ? "" : temp.attachId + "";

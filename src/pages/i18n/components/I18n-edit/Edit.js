@@ -150,7 +150,7 @@ class Edit extends Component {
 
 
         let title = this.onChangeHead(btnFlag);
-        let { name, } = rowData;
+        let { name, projectType, } = rowData;
         const { getFieldProps, getFieldError } = this.props.form;
 
         return (
@@ -191,6 +191,31 @@ class Edit extends Component {
                                     {getFieldError('name')}
                                 </span>
                             </Col>
+
+                            <Col md={4} xs={6}>
+                                <Label>
+                                    项目类型：
+                                </Label>
+                                    <Select disabled={btnFlag == 2}
+                                        {
+                                        ...getFieldProps('projectType', {
+                                            initialValue: typeof projectType === 'undefined' ? "" : projectType ,
+                                            rules: [{
+                                                required: true, message: '请选择项目类型',
+                                            }],
+                                        }
+                                        )}>
+                                        <Option value="">请选择</Option>
+                                            <Option value={ 1 }>UUI & JQuery</Option>
+                                            <Option value={ 2 }>React</Option>
+                                    </Select>
+
+
+                                <span className='error'>
+                                    {getFieldError('projectType')}
+                                </span>
+                            </Col>
+                            
                         <Col md={4} xs={6}>
                             <Label>
                                 附件：

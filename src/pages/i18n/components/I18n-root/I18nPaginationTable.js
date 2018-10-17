@@ -25,6 +25,24 @@ export default class I18nPaginationTable extends Component {
                 },
 
                 {
+                    title: "项目类型",
+                    dataIndex: "projectType",
+                    key: "projectType",
+                     width:200,
+                    render : (text, record, index) => (
+                        <Select
+                            className = "hideselect"
+                            disabled = {true}
+                            value={ typeof text === 'undefined' ? "" : text }
+                        >
+                            <Option value="">请选择</Option>
+                                <Option value={ 1 }>UUI & JQuery</Option>
+                                <Option value={ 2 }>React</Option>
+                        </Select>
+                    )
+                },
+                
+                {
                     title: "原始附件",
                     dataIndex: "sourcepath",
                     key: "sourcepath",

@@ -54,6 +54,12 @@ class I18nTable extends Component {
                     key: "name",
                     width: 100,
                 },
+                {
+                    title: "项目类型",
+                    dataIndex: "projectType",
+                    key: "projectType",
+                    width: 100,
+                },
             {
                 title: "操作",
                 dataIndex: "e",

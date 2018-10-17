@@ -17,6 +17,7 @@ class I18nForm extends Component {
         super(props)
         this.state = {
             name: '',
+            projectType: '',
         }
     }
     componentWillMount(){
@@ -44,6 +45,7 @@ class I18nForm extends Component {
     reset = () => {
         this.setState({
             name:'',
+            projectType: '',
         })
     }
     render(){
@@ -60,6 +62,38 @@ class I18nForm extends Component {
                     search={this.search}>
                 <Row>
 
+                            <Col md={4} xs={6}>
+                                <FormItem>
+                                    <Label>名称</Label>
+                                    <FormControl
+                                            {
+                                            ...getFieldProps('name', {
+                                                initialValue: '',
+                                            })
+                                        }
+                                    />
+
+
+                                </FormItem>
+                            </Col>
+                            <Col md={4} xs={6}>
+                                <FormItem>
+                                    <Label>项目类型</Label>
+
+                                    <Select
+                                            {
+                                            ...getFieldProps('projectType', {
+                                            initialValue: '',
+                                        })
+                                    }
+                                    >
+                                            <Option value="">请选择</Option>
+                                                <Option value="1">UUI & JQuery</Option>
+                                                <Option value="2">React</Option>
+                                    </Select>
+
+                                </FormItem>
+                            </Col>
                 </Row>
             </SearchPanel>
         )
