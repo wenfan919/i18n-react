@@ -52,12 +52,19 @@ export default class TranslatePaginationTable extends Component {
                     title: "法文",
                     dataIndex: "french",
                     key: "french",
+                    render(text, record, index) {
+                        return (
+                            <div >
+                                {text == null || text == "null" || text == ""  ? "" : text}
+                            </div>
+                        )
+                    }  
                 },
                 {
                     title: "操作",
                     dataIndex: "d",
                     key: "d",
-                    width:100,
+                    width:200,
                     fixed: "right",
                     render(text, record, index) {
                         return (
@@ -263,6 +270,8 @@ export default class TranslatePaginationTable extends Component {
                 <Header title='资源翻译'/>
                 <TranslateForm { ...this.props }/>
                 <div className='table-header mt25'>
+
+                <a href="/fe/i18n#" target="/fe/i18n#" rel="noopener noreferrer" class="u-upload-list-item-name">国际化工具</a>
                     <Button colors="primary" style={{"marginLeft":15}} size='sm' onClick={() => { self.cellClick({},0) }}>
                     新增
                     </Button>

@@ -7,6 +7,7 @@ import moment from "moment/moment";
 import Header from 'components/Header';
 import I18nForm from '../I18n-form';
 import './index.less'
+
 export default class I18nPaginationTable extends Component {
     constructor(props){
         super(props);
@@ -29,19 +30,26 @@ export default class I18nPaginationTable extends Component {
                     dataIndex: "projectType",
                     key: "projectType",
                      width:200,
-                    render : (text, record, index) => (
-                        <Select
-                            className = "hideselect"
-                            disabled = {true}
-                            value={ typeof text === 'undefined' ? "" : text }
-                        >
-                            <Option value="">请选择</Option>
-                                <Option value={ 1 }>UUI & JQuery</Option>
-                                <Option value={ 2 }>React</Option>
-                        </Select>
-                    )
+                     render(text, record, index) {
+                        return (
+                            <div >
+                                {text == null || text == "null" || text == ""  ? "" : (text == "1" ? "UUI & JQuery" : "REACT")}
+                            </div>
+                        )
+                    }  
+                    // render : (text, record, index) => (
+                    //     <Select
+                    //         className = "hideselect"
+
+                    //         value={ typeof text === 'undefined' ? "" : text }
+                    //     >
+                    //         <Option value="">请选择</Option>
+                    //             <Option value={ 1 }>UUI & JQuery</Option>
+                    //             <Option value={ 2 }>React</Option>
+                    //     </Select>
+                    // )
                 },
-                
+
                 {
                     title: "原始附件",
                     dataIndex: "sourcepath",
@@ -107,6 +115,7 @@ export default class I18nPaginationTable extends Component {
             selectData: data
         })
     }
+
     /**
      * 编辑,详情，增加
      */
@@ -276,11 +285,12 @@ export default class I18nPaginationTable extends Component {
                 <Header title='国际化工具'/>
                 <I18nForm { ...this.props }/>
                 <div className='table-header mt25'>
+
+                <a href="/fe/translate#" target="/fe/translate#" rel="noopener noreferrer" class="u-upload-list-item-name">资源总览</a>
+
                     <Button colors="primary" style={{"marginLeft":15}} size='sm' onClick={() => { self.cellClick({},0) }}>
                     新增
                     </Button>
-                   
-
 
                 </div>
                 <PaginationTable
