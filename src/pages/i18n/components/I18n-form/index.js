@@ -88,8 +88,9 @@ class I18nForm extends Component {
                                     }
                                     >
                                             <Option value="">请选择</Option>
-                                                <Option value="1">UUI & JQuery</Option>
-                                                <Option value="2">React</Option>
+                                                <Option value="1">UUI & JQuery项目抽取</Option>
+                                                <Option value="2">React项目抽取</Option>
+                                                <Option value="3">资源由简体转繁体</Option>
                                     </Select>
 
                                 </FormItem>

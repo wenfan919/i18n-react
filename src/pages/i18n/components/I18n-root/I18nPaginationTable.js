@@ -33,7 +33,10 @@ export default class I18nPaginationTable extends Component {
                      render(text, record, index) {
                         return (
                             <div >
-                                {text == null || text == "null" || text == ""  ? "" : (text == "1" ? "UUI & JQuery" : "REACT")}
+                                {text == null || text == "null" || text == ""  ? "" : 
+                                (text == "1" ? "UUI & JQuery项目抽取" : 
+                                (text == "2" ? "React项目抽取" : 
+                                (text == "3" ? "资源由简体转繁体" : "")))}
                             </div>
                         )
                     }  
