@@ -71,7 +71,7 @@ export default class TranslatePaginationTable extends Component {
                             <div className='operation-btn'>
                                 <i size='sm' className='uf uf-search edit-btn' onClick={() => { self.cellClick(record,2) }}></i>
                                 <i size='sm' className='uf uf-pencil edit-btn' onClick={() => { self.cellClick(record,1) }}></i>
-                                <i size='sm' className='uf uf-del del-btn' onClick={() => { self.delItem(record, index) }}></i>
+                                {/*<i size='sm' className='uf uf-del del-btn' onClick={() => { self.delItem(record, index) }}></i>*/}
                             </div>
                         )
                     }
@@ -287,7 +287,7 @@ export default class TranslatePaginationTable extends Component {
                         onSuccess={self.handlerUploadSuccess}
                         onDelete={ self.handlerUploadDelete}
                     >
-                        <Button className="ml5" colors="primary" size='sm'>导入</Button>
+                        <Button className="ml5" colors="primary" size='sm'>资源导入</Button>
                     </AcUpload>
                     <AcExport {...exportProps} className="ml5"/>
                 </div>

@@ -84,7 +84,7 @@ class AcExport extends Component {
                    animation="slide-up"
                  >
                     <Button colors="primary" className={className} size='sm' >
-                        导出
+                        资源导出
                     </Button>
                  </Dropdown>
 

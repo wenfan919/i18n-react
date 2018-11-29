@@ -109,7 +109,7 @@ export default class I18nPaginationTable extends Component {
                                 {/* <i size='sm' className='uf uf-download edit-btn' onClick={() => { self.downItem(record, index) }}></i> */}
        
 
-                                <i size='sm' className='uf uf-del del-btn' onClick={() => { self.delItem(record, index) }}></i>
+                                {/*<i size='sm' className='uf uf-del del-btn' onClick={() => { self.delItem(record, index) }}></i>*/}
                             </div>
                         )
                     }
