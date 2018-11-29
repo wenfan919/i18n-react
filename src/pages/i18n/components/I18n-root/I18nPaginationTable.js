@@ -32,14 +32,24 @@ export default class I18nPaginationTable extends Component {
                      width:200,
                      render(text, record, index) {
                         return (
-                            <div >
+                            <div>
                                 {text == null || text == "null" || text == ""  ? "" : 
-                                (text == "1" ? "UUI & JQuery项目抽取" : 
-                                (text == "2" ? "React项目抽取" : 
-                                (text == "3" ? "资源由简体转繁体" : "")))}
+                                (text == "1" ? "UUI & JQuery项目抽取" :
+                                (text == "2" ? "React项目抽取" :
+                                (text == "3" ? "资源由简体转繁体" :
+                                (text == "4" ? "资源由简体转英文" : ""))))}
                             </div>
                         )
-                    }  
+                    }
+
+               // <div style="color:#00CC00">
+                 //   {text == null || text == "null" || text == ""  ? "" :
+                   //     (text == "1" ? "<span  style=\"color:#CCCC00\">UUI & JQuery项目抽取</span>" :
+                     //       (text == "2" ? "<span  style=\"color:#CC0000\">React项目抽取</span>" :
+                       //         (text == "3" ? "<span  style=\"color:#00CC00\">资源由简体转繁体</span>" :
+                         //           (text == "4" ? "<span  style=\"color:#0000CC\">资源由简体转英文</span>" : ""))))}
+                // </div>
+
                     // render : (text, record, index) => (
                     //     <Select
                     //         className = "hideselect"
